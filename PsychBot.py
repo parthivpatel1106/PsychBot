@@ -6,9 +6,9 @@ import random
 #client (our bot)
 client = commands.Bot(command_prefix='!!')
 #ping command to find bot latency
-@client.command(name == 'ping')
+@client.command(name = 'ping')
 async def bot_ping(ctx):
-    await ctx.send(f'Latency of the bot is {round(bot.latency * 1000)}ms')
+    await ctx.send(f'Latency of the bot is {round(client.latency * 1000)}ms')
 #command to get bot info
 @client.command(name='info')
 async def bot_info(ctx):
