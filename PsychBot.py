@@ -5,14 +5,21 @@ import os
 import random
 #client (our bot)
 client = commands.Bot(command_prefix='!!')
+#ping command to find bot latency
+@client.command(name == 'ping')
+async def bot_ping(ctx):
+    await ctx.send(f'Latency of the bot is {round(bot.latency * 1000)}ms')
+#command to get bot info
 @client.command(name='info')
 async def bot_info(ctx):
     embed_info=discord.Embed(title="About PsychBot", description= "Hello my name is Psych. I am a bot who plays Stone, Paper, Scissor game with you. just type command '!!game' to play with me. Don't forget to use  '!!' before start command. you don't have to use '!!' during game. You can also use '!!stone', '!!paper', '!!scissor' or 'play' with '!!' to start game. '!!join' command is use to see if bot is online or not. You can also contribute to this bot. This bot is created by [Parthiv](https://github.com/parthivpatel1106).")
     await ctx.send(embed=embed_info)
+#command to check whether the bot is online or not    
 @client.command(name='join')
 async def bot_join(ctx):
     gen_channel= client.get_channel(channel_id) #your channel id
-    await ctx.send("Let's Play Dude!")
+    await ctx.send("Let's Play Dude!") 
+#command to play game     
 @client.command('game', aliases=['play','stone','paper','scissor'])
 async def mygame(ctx):
     #global times_used
