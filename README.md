@@ -8,9 +8,14 @@ You have to just invite this bot to your `Discord server` and you are ready to p
 ``` !!info ```
 use this command for check basic information about this bot.
 
+``` !!ping ```
+use this command to check the ping of the bot.
+> note: this command will show bot's response time not yours.
+
 ``` !!join ```
 use this command to check if the bot is online or not.
 > note: This is not a always online bot. you have to run this file on your device to active this bot online.\ You can host this bot online using Heroku or other hosting services.
+
 ``` 
 !!play 
 !!game 
